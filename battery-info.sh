@@ -32,7 +32,7 @@ fi
 
 # Output
 msg="Battery level is at: $percentage%\n$info"
-if [ "$commandlineonly" == "false" ]
+if [ "$commandlineonly" == "false" ]; then
 	notify-send -i "$icon" "Energy" "$msg"
 fi
-echo "$msg"
+printf "$msg\n"
