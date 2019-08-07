@@ -31,7 +31,7 @@ if [ "$symbolicicons" == "false" ] ; then
 fi
 
 # Output
-msg="Battery level is at: $percentage%%\n$info"
+msg="Battery level is at: $percentage%\n$info"
 if [ "$commandlineonly" == "false" ]; then
 	notify-send -i "$icon" "Energy" "$msg"
 fi
